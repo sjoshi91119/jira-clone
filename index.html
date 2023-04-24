@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jira Clone</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <button class="add-task-btn">Add Task</button>
+
+    <div class="container">
+        <div class="column" id="not-started"></div>
+        <div class="column" id="in-progress"></div>
+        <div class="column" id="completed"></div>
+    </div>
+
+    <div id="modal">
+
+        <form>
+            <button id="cross">X</button><br><br>
+            <label for="">Task Name:</label>
+            <br>
+            <input type="text">
+
+
+
+<br>
+            <label for="">Priority:</label> <br>
+            <select>
+                <option value="Low"></option>
+                <option value="High"></option>
+                <option value="Urgent"></option>
+            </select>
+<br>
+
+            <label for="">Due Date:</label> <br>
+            <input type="date">
+<br>
+            <label for="">Status:</label> <br>
+            <select>
+                <option value="NS"></option>
+                <option value="S"></option>
+                <option value="C"></option>
+            </select>
+<br>
+            <button type="submit" id="formbtn">Add Task</button> <br>
+            
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
