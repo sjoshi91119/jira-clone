@@ -9,9 +9,9 @@
 
 </head>
 <body>
-    <button class="add-task-btn">Add Task</button>
+    <button class="add-task-btn" onclick="clickAction()">Add Task</button>
 
-    <div class="container">
+    <div class="container" id="openUp">
         <div class="column" id="not-started"></div>
         <div class="column" id="in-progress"></div>
         <div class="column" id="completed"></div>
@@ -46,7 +46,7 @@
                 <option value="C"></option>
             </select>
 <br>
-            <button type="submit" id="formbtn">Add Task</button> <br>
+            <button id="formbtn" onclick="addTask()">Add Task</button> <br>
             
         </form>
     </div>

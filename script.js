@@ -1,8 +1,16 @@
-var btn = document.getElementById("btn");
+// var btn = document.querySelector(".add-task-btn");
 
 function clickAction() {
-    console.log("button was clicked.")
+    let modal = document.getElementById("modal");
+    modal.style.visibility = "visible";
+    
 };
+function addTask(){
+    preventDefault();
+    let dashboard = document.querySelector(".container");
+    dashboard.style.display = "flex";
+}
+
 
 // var myHeading = document.getElementById("heading2");
 

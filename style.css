@@ -21,10 +21,11 @@ background-image: linear-gradient( 181deg,  rgba(2,0,97,1) 15%, rgba(97,149,219,
 
 height: 85vh;
 width: 100;
-display: flex;
-justify-content: space-around;
 display: none;
+justify-content: space-around;
+
 }
+
 
 .column{
     margin-top: 2%;
@@ -43,6 +44,7 @@ display: none;
     border-radius: 10px;
     display: flex;
     align-items: center;
+    visibility: hidden;
 }
 
 form{
@@ -59,12 +61,14 @@ input{
    width:95%; 
     margin:5px 10px 25px 10px;
     padding:10px 5px;
+    color: black;
 }
 select{
     width: 97%;
     padding:10px 5px;
     margin:5px 0px 25px 0px;
     margin-left: 10px;
+    color:black;
 }
 label{
     width: 97%;
@@ -73,11 +77,13 @@ label{
     margin-left: 10px;
 }
 #formbtn{
-    width: 95%;
-    margin:15px;
+    width: 97%;
+    margin:10px;
     padding: 10px 20px;
     background-color: rgb(91, 91, 223);
     color:white;
+    font-weight: bold;
+    font-size:large;
 }
 #cross{
     float: right;
@@ -86,4 +92,5 @@ label{
     color:white;
     font-weight:1000;
     font-size:15px;
+    
 }
