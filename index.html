@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <button class="add-task-btn" onclick="clickAction()">Add Task</button>
+    <button class="add-task-btn">Add Task</button>
 
     <div class="container" id="openUp">
         <div class="column" id="not-started"></div>
@@ -17,36 +17,36 @@
         <div class="column" id="completed"></div>
     </div>
 
-    <div id="modal">
+    <div id="add-task-form">
 
-        <form>
+        <form id="theform">
             <button id="cross" onclick="close()">X</button><br><br>
             <label for="">Task Name:</label>
             <br>
-            <input type="text" id="TaskName">
+            <input type="text" id="task-name" required>
 
 
 
 <br>
             <label for="">Priority:</label> <br>
-            <select id="priority">
-                <option value="Low">Low</option>
-                <option value="High">High</option>
-                <option value="Urgent">Urgent</option>
+            <select id="priority" required>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
             </select>
 <br>
 
             <label for="">Due Date:</label> <br>
-            <input type="date" id="date">
+            <input type="date" id="due-date" required>
 <br>
             <label for="">Status:</label> <br>
-            <select id="status">
-                <option value="NS">Not Submitted</option>
-                <option value="S">Submitted</option>
-                <option value="C">Completed</option>
+            <select id="status" required>
+                <option value="not-started">Not Started</option>
+                <option value="in-progress">In Progress</option>
+                <option value="completed">Completed</option>
             </select>
 <br>
-            <button id="formbtn" onclick="addTask()">Add Task</button> <br>
+            <button id="formbtn">Add Task</button> <br>
             
         </form>
     </div>

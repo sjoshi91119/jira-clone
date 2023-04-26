@@ -33,6 +33,81 @@
 
 //================================================
 
+const openModalBtn = document.querySelector(".add-task-btn");
+const modal = document.querySelector("add-task-form");
+const closeModal = document.querySelector("#cross");
+const addTaskForm = document.getElementById("theform");
+
+const myBtn = document.querySelector("#formbtn");
+
+openModalBtn.addEventListener("click", () => {
+  modal.style.display = "block";
+});
+
+closeModal.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+myBtn.addEventListener("click", (event) => {
+  // standard code to prevent your page from reloading
+  event.preventDefault();
+
+  const taskName = document.getElementById("task-name").value;
+  const priority = document.getElementById("priority").value;
+  const dueDate = document.getElementById("due-date").value;
+  const status = document.getElementById("status").value;
+
+  addTask(taskName, priority, dueDate, status);
+  modal.style.display = "none";
+});
+
+function addTask(taskName, priority, dueDate, status) {
+  console.log(status);
+  if (status == "not-started") {
+    // add it in the column of not started
+    var list = document.getElementById("not-started");
+    list.innerHTML += `
+                        <li>
+                          <p>${taskName}</p>
+                          <p>${priority}</p>
+                          <p>${dueDate}</p>
+                          <p>${status}</p>
+                        </li>
+                      `;
+  } else if (status == "in-progress") {
+    var list = document.getElementById("in-progress");
+    list.innerHTML += `
+                        <li>
+                          <p>${taskName}</p>
+                          <p>${priority}</p>
+                          <p>${dueDate}</p>
+                          <p>${status}</p>
+                        </li>
+                      `;
+    // add it in the column of in-progress
+  } else if (status == "completed") {
+    var list = document.getElementById("completed");
+    list.innerHTML += `
+                        <li>
+                          <p>${taskName}</p>
+                          <p>${priority}</p>
+                          <p>${dueDate}</p>
+                          <p>${status}</p>
+                        </li>
+                      `;
+    // add it in the column of completed
+  }
+
+  // After successfully added ->
+
+  // document.getElementById("task-name").value = "";
+  // document.getElementById("priority").value = "";
+  // document.getElementById("due-date").value = "";
+  // document.getElementById("status").value = "";
+
+  document.getElementById("theform").reset();
+}
+
 
 
 
