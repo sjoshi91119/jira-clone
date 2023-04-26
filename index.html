@@ -20,30 +20,30 @@
     <div id="modal">
 
         <form>
-            <button id="cross">X</button><br><br>
+            <button id="cross" onclick="close()">X</button><br><br>
             <label for="">Task Name:</label>
             <br>
-            <input type="text">
+            <input type="text" id="TaskName">
 
 
 
 <br>
             <label for="">Priority:</label> <br>
-            <select>
-                <option value="Low"></option>
-                <option value="High"></option>
-                <option value="Urgent"></option>
+            <select id="priority">
+                <option value="Low">Low</option>
+                <option value="High">High</option>
+                <option value="Urgent">Urgent</option>
             </select>
 <br>
 
             <label for="">Due Date:</label> <br>
-            <input type="date">
+            <input type="date" id="date">
 <br>
             <label for="">Status:</label> <br>
-            <select>
-                <option value="NS"></option>
-                <option value="S"></option>
-                <option value="C"></option>
+            <select id="status">
+                <option value="NS">Not Submitted</option>
+                <option value="S">Submitted</option>
+                <option value="C">Completed</option>
             </select>
 <br>
             <button id="formbtn" onclick="addTask()">Add Task</button> <br>
@@ -51,6 +51,7 @@
         </form>
     </div>
 
+    
 
     <script src="script.js"></script>
 </body>

@@ -1,15 +1,43 @@
-// // var btn = document.querySelector(".add-task-btn");
+// var btn = document.querySelector(".add-task-btn");
 
 // function clickAction() {
 //     let modal = document.getElementById("modal");
 //     modal.style.visibility = "visible";
+//     let container = document.querySelector(".container").style.display="none";
     
 // };
+// let closebtn = document.getElementById("cross");
+// function close(){
+//     modal.display="none";
+// }
+// //taking values from the form
+
+
+// function userData(){
+//     console.log(id,taskName,priority,date,taskstatus);
+// }
+// userData();
+// let count = 0;
 // function addTask(){
 //     preventDefault();
 //     let dashboard = document.querySelector(".container");
 //     dashboard.style.display = "flex";
+//     id = count++;
+//     let taskName = document.getElementById("TaskName").value;
+// let priority = document.getElementById("priority").value;
+// let date = document.getElementById("date").value;
+// let taskstatus = document.getElementById("status").value;
+//     userData();
+//     console.log("execution complete");
 // }
+
+//================================================
+
+
+
+
+//==================================================
+
 
 
 // // var myHeading = document.getElementById("heading2");
@@ -56,26 +84,6 @@
 
 
 // //===========================================================
-
-const addTaskBtn = document.querySelector('.add-task-btn');
-const modal = document.getElementById('modal');
-const modalContent = document.querySelector('.modal-content');
-const closeModalBtn = document.getElementById('cross');
-
-
-addTaskBtn.addEventListener('click', () => {
-  modal.style.display = 'flex';
-});
-
-closeModalBtn.addEventListener('click', () => {
-  modal.style.display = 'none';
-});
-
-window.addEventListener('click', (e) => {
-  if (e.target === modal) {
-    modal.style.display = 'none';
-  }
-});
 
 
 
